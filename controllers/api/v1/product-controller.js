@@ -39,6 +39,7 @@ module.exports.getProduct = async (req, res) => {
 
 module.exports.updateProduct = async (req, res) => {
     try {
+        console.log(req.name);
         const data = await ProductModal.updateOne({}
             // {name:"Nishant"}, 
             // function (err, docs) {
